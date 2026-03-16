@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Neon Wrap Snake</title>
+    <style>
+        * { box-sizing: border-box; touch-action: none; }
+body { 
+    background: #050505; 
+    display: flex; justify-content: center; align-items: center; 
+    height: 100vh; margin: 0; overflow: hidden;
+    font-family: 'Courier New', Courier, monospace;
+}
+#game-container {
+    position: relative;
+    width: 90vw; max-width: 500px;
+    aspect-ratio: 1 / 1;
+}
+canvas { 
+    background: radial-gradient(circle, #111 0%, #000 100%);
+    border: 3px solid #0ff; 
+    box-shadow: 0 0 20px #0ff;
+    width: 100%; height: 100%;
+    display: block;
+}
+#overlay {
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+    display: flex; flex-direction: column; justify-content: center; align-items: center;
+    background: rgba(0, 0, 0, 0.85); color: #0ff; text-align: center;
+}
+button {
+    padding: 15px 35px; font-size: 1.2rem; background: transparent; 
+    color: #0ff; border: 2px solid #0ff; cursor: pointer;
+    text-transform: uppercase; letter-spacing: 3px; transition: 0.3s;
+}
+button:hover { background: #0ff; color: #000; box-shadow: 0 0 20px #0ff; }
+h1 { font-size: clamp(2rem, 10vw, 4rem); margin: 0; text-shadow: 0 0 15px #0ff; }
+p { color: #888; margin: 20px 0; line-height: 1.5; }
+    </style>
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="gameCanvas" width="400" height="400"></canvas>
+        <div id="overlay">
+            <h1>NEON WRAP</h1>
+            <p id="stats-msg">Arrows/WASD to Move<br>Walls are Portals</p>
+            <button id="startBtn">START SYSTEM</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

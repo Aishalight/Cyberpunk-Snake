@@ -5,7 +5,6 @@ A grid-based logic game featuring toroidal movement and procedural obstacle gene
 
 ## 🛠 Features
 * **Toroidal Movement (Wrapping):** Snake teleports to the opposite side of the screen when hitting a boundary.
-* **Procedural Obstacles:** Static "mines" spawn dynamically every 30 points to increase difficulty.
 * **Neon Aesthetics:** Utilizes `shadowBlur` and radial gradients for a cyberpunk visual style.
 * **Responsive Input:** Supports both Keyboard (WASD/Arrows) and Swipe gestures for mobile play.
 
@@ -16,4 +15,4 @@ A grid-based logic game featuring toroidal movement and procedural obstacle gene
 ## 🕹 How to Play
 1. Open `index.html`.
 2. Use **WASD** or **Swipe** to steer.
-3. Eat the pink pixels to grow; avoid hitting your own tail or the red obstacles.
+3. Eat the pink pixels to grow; avoid hitting your own tail.
